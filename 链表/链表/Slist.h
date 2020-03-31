@@ -16,16 +16,32 @@ typedef struct SLNode
 }SLNode;    //用typedef，将struct SLNode{...}这种结构体，重命名为SLNode类型
 			//若此处不加typedef，此处的SLNode意思为：struct SLNode这种类型定义出来的变量；
 
-//尾插
-void SLPushBack(SLNode* head,DataType data);//C语言中使用结构体时，前面要加上struct，此处SLNode实际是重命名后的struct SLNode
-//尾删
-void SLPopBack(SLNode* head);
-
-//头插
-void SLPushFront(SLNode* head, DataType data);
-//头删
-void SLPopFront(SLNode* head);
+//动态申请节点
+SLNode* BuySLNode(DataType x);
 
 //打印链表
-void PrintSList(SLNode* head);
+void PrintSList(SLNode* psl);
+
+//尾插
+void SLPushBack(SLNode** ppsl,DataType data);//C语言中使用结构体时，前面要加上struct，此处SLNode实际是重命名后的struct SLNode
+
+//尾删
+void SLPopBack(SLNode** ppsl);
+
+//头插
+void SLPushFront(SLNode** ppsl, DataType data);
+
+//头删
+void SLPopFront(SLNode** ppsl);
+
+//单链表查找
+SLNode* SLFind(SLNode* psl,DataType data);
+
+//在pos之后插入x
+void SLInterAfter(SLNode* pos, DataType x);
+
+//删除pos之后的值
+void SLEraseAfter(SLNode* pos);
+
+
 

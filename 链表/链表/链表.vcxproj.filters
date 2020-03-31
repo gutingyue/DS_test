@@ -23,7 +23,7 @@
     <ClCompile Include="SList.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="SLtest.c">
+    <ClCompile Include="test.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
