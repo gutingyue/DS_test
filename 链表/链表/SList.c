@@ -70,7 +70,7 @@ void SLPopBack(SLNode** ppsl){
 
 //头插
 void SLPushFront(SLNode** ppsl, DataType data){
-	assert(ppsl);
+	assert(ppsl);//assert没有触发，说明链表存在（不等于链表为空）
 
 	SLNode* newNode=BuySLNode(data);
 
@@ -80,16 +80,57 @@ void SLPushFront(SLNode** ppsl, DataType data){
 
 
 //头删
-void SLPopFront(SLNode** ppsl);
+void SLPopFront(SLNode** ppsl){
+	assert(ppsl);
+
+	if (*ppsl == NULL){
+		return;
+	}
+	SLNode* cur = *ppsl;
+	*ppsl = (*ppsl)->next;
+	free(cur);
+}
 
 
 //单链表查找
-SLNode* SLFind(SLNode* psl,DataType data);
+SLNode* SLFind(SLNode* psl, DataType data){
+	assert(psl);
+
+	SLNode* cur = psl;
+
+	while (cur){
+		if (cur->data == data){
+			return cur;
+		}
+		cur = cur->next;
+	}
+	return NULL;
+}
 
 
 //在pos之后插入x
-void SLInterAfter(SLNode* pos, DataType x);
+void SLInterAfter(SLNode* pos, DataType x){
+	SLNode* newNode=BuySLNode(x);
+
+	if (pos == NULL){
+		pos = newNode;
+	}
+	else{
+		newNode->next = pos->next;
+		pos->next = newNode;
+	}
+}
 
 
 //删除pos之后的值
-void SLEraseAfter(SLNode* pos);
+void SLEraseAfter(SLNode* pos){
+	if (pos == NULL){
+		return;
+	}
+	else{
+		SLNode* cur = pos->next;
+		pos->next = cur->next;
+		free(cur);
+	}
+	
+}
