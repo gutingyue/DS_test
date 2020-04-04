@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="removeElements.c">
+    <ClCompile Include="SList.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
