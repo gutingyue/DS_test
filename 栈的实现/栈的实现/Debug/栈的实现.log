@@ -1,0 +1,4 @@
+﻿  test.c
+d:\比特\比特作业\ds_test\栈的实现\栈的实现\test.c(7): warning C4013: “printf”未定义；假设外部返回 int
+d:\比特\比特作业\ds_test\栈的实现\栈的实现\test.c(28): warning C4013: “system”未定义；假设外部返回 int
+  栈的实现.vcxproj -> D:\比特\比特作业\DS_test\栈的实现\Debug\栈的实现.exe
