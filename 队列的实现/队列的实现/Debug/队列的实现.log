@@ -1,0 +1,16 @@
+﻿  Queue.c
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(20): warning C4133: “=”: 从“QNode *”到“QNode *”的类型不兼容
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(29): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(30): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(39): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(43): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(44): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(53): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(53): warning C4033: “QueueFront”必须返回值
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(60): error C2037: “val”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(60): warning C4033: “QueueBack”必须返回值
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\queue.c(85): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+  Qtest.c
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\qtest.c(9): error C2037: “next”的左侧部分指定未定义的结构/联合“QNode”
+d:\比特\比特作业\ds_test\队列的实现\队列的实现\qtest.c(12): warning C4133: “=”: 从“QNode *”到“QNode *”的类型不兼容
+  正在生成代码...
