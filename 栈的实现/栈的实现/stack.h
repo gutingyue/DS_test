@@ -1,6 +1,6 @@
 #pragma once
 
-typedef int Datatype;
+typedef char Datatype;
 
 typedef struct Stack{
 	Datatype* array; //Êý×é¿Õ¼ä
